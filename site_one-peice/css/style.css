@@ -1,5 +1,5 @@
 body  {
-    background-image: url(..//img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,18 +26,29 @@ h2, h3  {
 #image-box {
     width: 600px;  
 }
-
-.image-box1{
+.header {
     position: relative;
-    left: 280px;
+    margin: auto;
 }
- .image-box {
+
+#image-headeer {
+    margin: auto;
+    padding: 0px;
+    width: 50%;
+    position: relative;
+}
+#image-header img {
+    margin: auto;
+    width: 100%;
+}
+.image-box {
     display: block;
     margin-left: auto;
     margin-right: auto; 
     margin-top: 25px;
     height: 100%; 
 } 
+ 
 
 .image-box2  {
     margin-left: auto;
@@ -60,7 +71,7 @@ h2, h3  {
 #nav-box ul {
     list-style: none;
    position: relative;
-    left: 390px; 
+    left: 35%; 
 }
 
 #nav-box li {
@@ -115,14 +126,25 @@ a.active {
         width: 80%;
         font-size: 16px;
     }
-    
-}
 
-@media screen and (max-width: 768px) {
+    .image-box { 
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 25px;
+        height: 80%; 
+    }   
+}
+    
+
+@media screen and (max-width: 968px) {
     body {
         margin: 0px;
         padding: 0px;
-        background-image: none;
+        background-image: block;
     }
 
     #main {
@@ -138,40 +160,38 @@ a.active {
 
     #nav-box ul li {
         position: relative;
-        right: 400px;
+        right: 30%;
     }
 
-    .image-box {
+    .header{
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        width: 80%;
+    }
+
+    .image-box { 
         margin: 0px;
         padding: 0px;
         width: 100%;
-    }
-    
-    .image-box1 {
-        margin-right: 400px;
-    }
-
-    .image-box1 {
-       margin: 0px;
-       padding: 0px;
-       width: 80%;
-    }
-
-    .image-box {
         display: block;
         margin-left: auto;
         margin-right: auto; 
         margin-top: 25px;
         height: 80%; 
-    }
-   
-    
+    }   
 }
 
 #footer-box {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 8px #D61401;
+    border-radius: 8px;
+    background-color: #D6AE40;
+    padding: 0px;
+    margin: 0px;
+    height: 45px;
     text-align: center;
-    color: #D61401;
+    color: #ffffff;
     height: 50px;
-box-shadow: #fff 1px;
+box-shadow: rgb(0, 0, 0) 1px;
 }
-
