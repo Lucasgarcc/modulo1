@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+   background-color: #ffffff;
+    background-repeat: no-repeat; 
+    width: 100%;
+
+}
+/* cabeçalho */
+
+header {
+    width: 100%;
+    height: 60px;
+    padding: 5px; /* da espaçamento itens do
+    header   
+    box-shadow: 0px 5px 20px #1b1b1b ;*/
+    display: flex;
+    flex-wrap: wrap; /* pra quebrar */
+    justify-content: space-between; /* deixa o header de um lado e o menu do outro */
+    align-items: center;
+}
+
+
+
+.logo img {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0.1px 0px 0px 0px #1b1b1b ; 
+}
+
+/* menu */
+.nav-box {
+    display: block;
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    flex-wrap: wrap;
+
+}
+
+
+.nav-box li a {
+    color: #000000;
+    font-weight: bolder;
+    display: block;
+    text-decoration: none;
+    margin-left: 10px; 
+    margin-bottom: 10px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+
+.nav-box li a:hover {
+   background-color:  #dbdf2b;
+    transition: 0.1s ;
+    display: block;
+}
+
+/* Corpo da pagina */
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 46px;
+    text-shadow: #000000 0px 2px 2px;
+    color: #5ba658;
+}
+ 
+ h2 {
+    color: #e46047;
+    text-align: center;
+
+}
+.content,  h2, p  {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.content, img {
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    flex: 1 1 300px;
+    margin: 10px;
+    
+}
+
+/*  imagens  da pagina */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.box-image  {
+    max-width: 100%;
+    height: 240px; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Contato */
+
+.formulario {
+   background-color: #d8d8d8;
+   border-radius: 10px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    margin-bottom: 200px;
+    width: 600px;
+    height: 550px;
+    
+}
+.formulario, h2 {
+     color: #000000 ;
+    text-align: center;
+    margin-bottom:  10px;
+}
+form label {
+
+    position: relative;
+    left: 25%;
+    text-align: justify;
+    padding-top: 5px ;
+    display:block;
+    font-size: 16px;
+    font-family: 'Gotu', sans-serif;
+    font-weight: bold;
+}
+.input-padrao {
+    position: relative;
+    left: 25%;
+    display: block;
+    margin: 0 0 20px;
+    width: 50%;
+    padding: 10px;
+
+}
+.enviar, .apagar {
+    width: 15%;
+    padding: 6px 0;
+    background: #dbdf2b;
+    color: rgb(51, 48, 48);
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 1%;
+    margin: 0 auto;
+}
+/* reponsividade midia */
+
+@media screen and (max-width: 720px){
+ 
+
+    img {
+        width: 95%;
+    }
+    
+    .box-image {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 320px){
+
+    img {
+        width: 95%;
+    }
+    
+    .box-image {
+        width: 95%;
+    }
+
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    h1 {
+        position: relative;
+        left: 25%;
+    }
+  
+    .footer, .icone2, .icone {
+        position: relative;
+        left: 160%;
+    }
+}
+
+/* rodapé */
+
+footer {
+    width: 100%;
+    height: 70px;
+    margin-top: 60px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* deixa o header de um lado e o menu do outro */
+} 
+
+.box-footer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.icone {
+    margin: 10px;
+    width: 28px;
+    display: flex;
+} 
+
+.icone2 {
+    margin: 10px;
+    width: 33px;
+}
